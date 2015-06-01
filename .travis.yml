@@ -13,3 +13,7 @@ cache:
 
 before_script:
     - composer require --prefer-source --dev symfony/symfony:${SYMFONY_VERSION}
+
+script:
+  - phpunit -c app
+*
