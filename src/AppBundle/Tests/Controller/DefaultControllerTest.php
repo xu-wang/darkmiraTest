@@ -8,6 +8,11 @@ class DefaultControllerTest extends WebTestCase
 {
     public function testIndex()
     {
-        $this->assertEquals(true, true);
+        $client = static::createClient();
+
+        $crawler = $client->request('GET', '/app/example');
+
+        $this->assertEquals(200, $client->getResponse()->getStatusCode());
+        $this->assertTrue($crawler->filter('html:contains("Homepage")')->count() > 0);
     }
 }
