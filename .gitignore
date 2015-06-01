@@ -19,6 +19,7 @@
 /var/bootstrap.php.cache
 /bin/*
 !bin/console
+!bin/run-tests.sh
 !bin/symfony_requirements
 /vendor/
 

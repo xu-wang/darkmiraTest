@@ -1,6 +1,6 @@
 {
     "name": "xwg/darkmira-test",
-    "license": "proprietary",
+    "license": "MIT",
     "type": "project",
     "autoload": {
         "psr-4": {
